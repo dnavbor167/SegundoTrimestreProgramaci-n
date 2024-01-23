@@ -35,5 +35,17 @@ public class EjercicioMatrices1 {
                 + matrizUsuario[i][j]);
             }
         }
+        
+        System.out.println("La suma total es: " + sumaTotal(matrizUsuario));
+    }
+    
+    public static int sumaTotal(int[][] matriz){
+        int suma = 0;
+        for (int i = 0; i < matriz.length; i++){
+            for (int j = 0; j < matriz[i].length; j++){
+                suma += matriz[i][j];
+            }
+        }
+        return suma;
     }
 }
