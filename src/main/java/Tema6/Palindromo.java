@@ -34,13 +34,13 @@ public class Palindromo {
     }
     
     //método palíndromo versión recursiva
-    public static boolean palindromoRecursivo(String palindromo, int posicion) {
-        char[] palindromoChar = palindromo.toCharArray();
-        
-        if (posicion < palindromoChar.length) {
-            
-        }
-    }
+//    public static boolean palindromoRecursivo(String palindromo, int posicion) {
+//        char[] palindromoChar = palindromo.toCharArray();
+//        
+//        if (posicion < palindromoChar.length) {
+//            
+//        }
+//    }
     
     
 }
