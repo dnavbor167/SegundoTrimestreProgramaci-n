@@ -20,7 +20,7 @@ public class Palindromo {
         char[] palindromoChar = palindromo.toCharArray();
         
         //bucle para recorrer el array de char
-        for (int i = 0; i < palindromoChar.length; i++) {
+        for (int i = 0; i < palindromoChar.length / 2; i++) {
             //comprobamos que la posición del palíndromo de el principio y el
             //final sea lo mismo y luego vamos sumando y restando
             if (palindromoChar[i] != palindromoChar[palindromoChar.length -1 -i]) {
@@ -34,11 +34,18 @@ public class Palindromo {
     }
     
     //método palíndromo versión recursiva
-//    public static boolean palindromoRecursivo(String palindromo, int posicion) {
+//    public static boolean palindromoRecursivo(String palindromo, int posicion, int tamaño) {
+//        int mitadPalabra = palindromo.length() / 2;
 //        char[] palindromoChar = palindromo.toCharArray();
 //        
-//        if (posicion < palindromoChar.length) {
-//            
+//        if (posicion == mitadPalabra) {
+//            return true;
+//        } else {
+//            if (palindromoChar[posicion] == palindromoChar[tamaño]) {
+//                palindromoRecursivo(palindromo, ++posicion, --tamaño);
+//            } else {
+//                return false;
+//            }
 //        }
 //    }
     
