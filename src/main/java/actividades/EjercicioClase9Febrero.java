@@ -45,6 +45,10 @@ public class EjercicioClase9Febrero {
             }
         }
         return lista;
+        
+        //LO MEJOR ES PASAR COMO PARÁMETRO AL SET LA LISTA
+        //Set<Integer> set = new HashSet<>(lista);
+        //Return new List<>(set);
     }
 
     //Recursivo posición busqueda de un elemento (lista sin duplicados)
