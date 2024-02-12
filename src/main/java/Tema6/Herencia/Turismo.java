@@ -72,6 +72,11 @@ public class Turismo extends Vehiculo {
         System.out.println("Añadiendo rueda...");
     }
     
-    
+    //Sobreescribimos con el override el método padre
+    //esto es un método polimórfico
+    @Override
+    public void pasarItv() {
+        System.out.println("Soy un turismo y estoy pasando la itv"); 
+    }
     
 }

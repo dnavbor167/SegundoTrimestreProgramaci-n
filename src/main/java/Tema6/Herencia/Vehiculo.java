@@ -10,7 +10,11 @@ import java.util.Objects;
  *
  * @author daniel
  */
-public class Vehiculo {
+
+//CUANDO TENEMOS UN MÉTODO QUE SE VA A SOBREESCRIBIR EN EN CADA HIJO
+//LA CLASE PADRE SERÁ ABSTRACTA (ESTE SERÁ UNA PLANTILLA)
+//YA NO PODRÉ INSTANCIAR ESTE OBJETO PORQUE ES UNA CLASE ABSTRACTA
+public abstract class Vehiculo {
     
     private String matricula;
     private String bastidor;
@@ -114,5 +118,5 @@ public class Vehiculo {
         this.tarifa -= cantidad;
     }
     
-    
+    public abstract void pasarItv();
 }
