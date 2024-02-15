@@ -11,7 +11,7 @@ package actividades.actividad12;
 public class CuentaCorriente extends Cuenta {
 
     //atritubos encapsulados
-    private final double INTERESFIJO = 1.5;
+    private final double INTERESFIJO = 0.15;
     private double saldoMinimo;
 
     //insertamos constructor parametrizado
@@ -63,8 +63,6 @@ public class CuentaCorriente extends Cuenta {
         //se ejecuta el código
         if ((super.getSaldo() - dineroARetirar)>= saldoMinimo) {
             super.setSaldo(super.getSaldo() - dineroARetirar);
-        } else {
-            System.out.println("No se puede reitar menos dinero del que tienes");
         }
 
     }

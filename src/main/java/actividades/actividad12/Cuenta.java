@@ -4,29 +4,38 @@
  */
 package actividades.actividad12;
 
+import java.util.HashSet;
 import java.util.Objects;
 import java.util.Random;
+import java.util.Set;
 
 /**
  *
  * @author daniel
  */
 public abstract class Cuenta {
+
     private String numeroCuenta;
     private double saldo;
     private Persona cliente;
-    
+    public static Set<String> setNumeroCuenta = new HashSet<>();
+
     //Metemos constructor parametrizado
     public Cuenta(Persona cliente) {
-        this.numeroCuenta = contraseña();
+        String contra;
+        do {
+            contra = contraseña();
+            this.numeroCuenta = contra;
+        } while (numeroCuenta.contains(contra));
+
         this.saldo = 0.0;
         this.cliente = cliente;
     }
+
     //constructor vacio
     public Cuenta() {
     }
-    
-    
+
     //Metemos getter y sette
     public String getNumeroCuenta() {
         return numeroCuenta;
@@ -51,7 +60,7 @@ public abstract class Cuenta {
     public void setCliente(Persona cliente) {
         this.cliente = cliente;
     }
-    
+
     //insertamos toString
     @Override
     public String toString() {
@@ -63,7 +72,7 @@ public abstract class Cuenta {
         sb.append('}');
         return sb.toString();
     }
-    
+
     //Insertamos equals y hashcode
     @Override
     public int hashCode() {
@@ -94,21 +103,26 @@ public abstract class Cuenta {
         }
         return Objects.equals(this.cliente, other.cliente);
     }
-    
-    
+
     //Método para contraseña aleatoria
     public String contraseña() {
         Random r = new Random();
         StringBuilder sb = new StringBuilder();
         sb.append("ES");
-        for (int i = 0; i < 18; i++) {
-            sb.append(r.nextInt(0, 10));
-        }
+        do {
+            for (int i = 0; i < 18; i++) {
+                sb.append(r.nextInt(0, 10));
+            }
+            if (setNumeroCuenta.contains(sb)) {
+                sb.delete(2, 20);
+            }
+        } while (setNumeroCuenta.contains(sb));
         return sb.toString();
     }
-    
+
     //Métodos abstractos
     public abstract void actualizarSaldo();
+
     public abstract void retirar(double dineroARetirar);
-    
+
 }

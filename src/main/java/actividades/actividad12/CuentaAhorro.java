@@ -60,11 +60,9 @@ public class CuentaAhorro extends Cuenta{
 
     @Override
     public void retirar(double dineroARetirar) {
-        if (super.getSaldo() > 0 && super.getSaldo() <= dineroARetirar) {
+        if (super.getSaldo() <= dineroARetirar) {
             super.setSaldo(dineroARetirar);
             System.out.println("Dinero retirado con éxito");
-        } else {
-            System.out.println("No se puede retirar dinero, insuficienci de saldo");
         }
         
     }
