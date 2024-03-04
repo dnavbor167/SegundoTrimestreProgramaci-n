@@ -1,6 +1,7 @@
 daw/Matrices.class
 actividades/actividad8/Moneda.class
 actividades/Actividad15/ParteB/Diputado.class
+Pila/Main.class
 actividades/Actividad15/ParteB/Main.class
 actividades/actividad11/Romboide.class
 actividades/actividad11/Triangulo.class
@@ -23,8 +24,10 @@ Interfaces/Terrestres.class
 actividades/actividad8/Main.class
 actividades/actividad8/Azar.class
 actividades/EjercicioMatrices1.class
+Pila/PilaString.class
 Tema6/Herencia/Vehiculo.class
 actividades/actividad7Trabajadores/Profesor.class
+equals/Main.class
 actividades/actividad12/CuentaCorriente.class
 actividades/Actividad15/ParteB/Persona.class
 actividades/actividad12/Persona.class
@@ -34,7 +37,9 @@ Tema6/Palindromo.class
 Interfaces/Main.class
 actividades/actividad11/Figura.class
 actividades/Actividad15/ParteB/Legislador.class
+equals/Ordenador.class
 actividades/actividad12/Cuenta.class
+equals/Portatil.class
 actividades/actividad7Trabajadores/Policia.class
 actividades/actividad7Trabajadores/Main.class
 actividades/actividad8/Dado.class
