@@ -18,7 +18,7 @@ public class PilaString {
     private final int tamañoMax;
 
     public PilaString(int tamañoMax) {
-        this.pila = new ArrayList<>();
+        this.pila = new ArrayList<>(tamañoMax);
         this.tamañoMax = tamañoMax;
     }
 
@@ -41,9 +41,10 @@ public class PilaString {
     
     //método para sacar elemento
     public String sacarElemento() {
-        String devolverElemento = pila.get(pila.size()-1);
-        pila.remove(pila.size()-1);
-        return devolverElemento;
+        if (!pila.isEmpty()) {
+            return pila.remove(pila.size()-1);
+        }
+        return null;
     }
     
     //método para saber si es está vacío

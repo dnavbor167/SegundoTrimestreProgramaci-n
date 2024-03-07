@@ -29,7 +29,7 @@ public class Main {
         
         pila.estaLlena();
         
-        pila.numElemetnos();
+        System.out.println(pila.numElemetnos());
         
         pila.numMax();
     }
