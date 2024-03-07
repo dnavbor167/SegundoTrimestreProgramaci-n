@@ -23,10 +23,8 @@ public class Main {
         pila.añadirElemento("9");
         pila.añadirElemento("10");
         
-        System.out.println(pila.sacarElemento());;
-        
         //mostramos los números de elementos que hay en la pila
-        System.out.println("Número de elementos en la lista: " + pila.numElemetnos());
+        System.out.println("Número de elementos en la pila: " + pila.numElemetnos());
         
         //mostramos el número máximo de elementos que puede haber en la pila
         System.out.println("El número máximo de elementos es " + pila.numElemetnos());
@@ -43,5 +41,25 @@ public class Main {
         
         //número de elementos de la pila
         System.out.println("Número de elementos en la pila: " + pila.numElemetnos());
+        
+        //mostramos número máximo de elementos
+        System.out.println("El número máximo de elementos es: " + pila.numMax());
+        
+        //miramos si está llenta
+        if (pila.estaLlena()) {
+            System.out.println("La pila está llena");
+        } else {
+            System.out.println("La pila está vacía");
+        }
+        
+        //miramos si está vacía
+        if (pila.estaVacio()) {
+            System.out.println("La pila está vacía");
+        } else {
+            System.out.println("La pila no está vacía");
+        }
+        
+        //mostramos toda la cola
+        System.out.println(pila.toString());
     }
 }

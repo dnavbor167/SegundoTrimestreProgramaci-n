@@ -55,10 +55,8 @@ public class ColaFifo<E> {
     
     //saber si está llena
     public boolean estaLlena() {
-        if (this.cola.size() == this.tamañoMax) {
-            return true;
-        }
-        return false;
+        return this.cola.size() == this.tamañoMax;
+
     }
     
     //método para saber el número de elementos que hay

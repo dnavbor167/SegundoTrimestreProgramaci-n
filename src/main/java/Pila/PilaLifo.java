@@ -33,40 +33,37 @@ public class PilaLifo<E> {
         sb.append('}');
         return sb.toString();
     }
-    
+
     //método para añadir un elemento a la lista
     public void añadirElemento(E elementoAñadir) {
         if (!estaLlena()) {
             this.pila.add(elementoAñadir);
         }
     }
-    
+
     //método para sacar elemento
     public E sacarElemento() {
         if (!pila.isEmpty()) {
-            return pila.remove(pila.size()-1);
+            return pila.remove(pila.size() - 1);
         }
         return null;
     }
-    
+
     //método para saber si es está vacío
     public boolean estaVacio() {
         return this.pila.isEmpty();
     }
-    
+
     //saber si está llena
     public boolean estaLlena() {
-        if (this.pila.size() == this.tamañoMax) {
-            return true;
-        }
-        return false;
+        return this.pila.size() == this.tamañoMax;
     }
-    
+
     //método para saber el número de elementos que hay
     public int numElemetnos() {
         return this.pila.size();
     }
-    
+
     //saber número máximo de elementos
     public int numMax() {
         return this.tamañoMax;
