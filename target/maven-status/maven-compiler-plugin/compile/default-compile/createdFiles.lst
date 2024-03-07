@@ -24,7 +24,6 @@ Interfaces/Terrestres.class
 actividades/actividad8/Main.class
 actividades/actividad8/Azar.class
 actividades/EjercicioMatrices1.class
-Pila/PilaString.class
 Tema6/Herencia/Vehiculo.class
 actividades/actividad7Trabajadores/Profesor.class
 equals/Main.class
@@ -36,10 +35,13 @@ Tema6/Herencia/Main.class
 Tema6/Palindromo.class
 Interfaces/Main.class
 actividades/actividad11/Figura.class
+Cola/ColaFifo.class
+Pila/PilaLifo.class
 actividades/Actividad15/ParteB/Legislador.class
 equals/Ordenador.class
 actividades/actividad12/Cuenta.class
 equals/Portatil.class
+Cola/Main.class
 actividades/actividad7Trabajadores/Policia.class
 actividades/actividad7Trabajadores/Main.class
 actividades/actividad8/Dado.class

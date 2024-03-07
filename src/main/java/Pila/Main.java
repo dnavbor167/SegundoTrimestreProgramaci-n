@@ -10,7 +10,7 @@ package Pila;
  */
 public class Main {
     public static void main(String[] args) {
-        PilaLifo pila = new PilaLifo(10);
+        PilaLifo<String> pila = new PilaLifo(10);
         
         pila.añadirElemento("1");
         pila.añadirElemento("2");
@@ -25,12 +25,23 @@ public class Main {
         
         System.out.println(pila.sacarElemento());;
         
-        pila.estaVacio();
+        //mostramos los números de elementos que hay en la pila
+        System.out.println("Número de elementos en la lista: " + pila.numElemetnos());
         
-        pila.estaLlena();
+        //mostramos el número máximo de elementos que puede haber en la pila
+        System.out.println("El número máximo de elementos es " + pila.numElemetnos());
         
-        System.out.println(pila.numElemetnos());
+        //sacamos 2 elementos
+        System.out.println("Sacamos el elemento " + pila.sacarElemento());
+        System.out.println("Sacamos el elemento " + pila.sacarElemento());
         
-        pila.numMax();
+        //número de elementos de la pila
+        System.out.println("Número de elementos en la pila: " + pila.numElemetnos());
+        
+        //añadimos elemento
+        pila.añadirElemento("6");
+        
+        //número de elementos de la pila
+        System.out.println("Número de elementos en la pila: " + pila.numElemetnos());
     }
 }
