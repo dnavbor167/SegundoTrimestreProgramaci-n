@@ -10,7 +10,7 @@ package Pila;
  */
 public class Main {
     public static void main(String[] args) {
-        PilaString pila = new PilaString(10);
+        PilaLifo pila = new PilaLifo(10);
         
         pila.añadirElemento("1");
         pila.añadirElemento("2");

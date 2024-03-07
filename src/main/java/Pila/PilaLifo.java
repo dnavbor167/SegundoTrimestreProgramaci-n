@@ -11,13 +11,15 @@ import java.util.List;
  *
  * @author daniel
  */
-public class PilaString {
+//EN EJECUCIÓN DEL MAIN SUSTITUIRÁ EL "E" POR EL TIPO DE DATO QUE LE PASEMOS
+//EN EL MAIN
+public class PilaLifo<E> {
 
     //atributos encapsulados
-    private final List<String> pila;
+    private final List<E> pila;
     private final int tamañoMax;
 
-    public PilaString(int tamañoMax) {
+    public PilaLifo(int tamañoMax) {
         this.pila = new ArrayList<>(tamañoMax);
         this.tamañoMax = tamañoMax;
     }
@@ -33,14 +35,14 @@ public class PilaString {
     }
     
     //método para añadir un elemento a la lista
-    public void añadirElemento(String elementoAñadir) {
+    public void añadirElemento(E elementoAñadir) {
         if (!estaLlena()) {
             this.pila.add(elementoAñadir);
         }
     }
     
     //método para sacar elemento
-    public String sacarElemento() {
+    public E sacarElemento() {
         if (!pila.isEmpty()) {
             return pila.remove(pila.size()-1);
         }
