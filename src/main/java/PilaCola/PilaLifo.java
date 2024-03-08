@@ -24,7 +24,7 @@ public class PilaLifo<E> extends PilaCola<E>{
     @Override
     public E sacarElemento() {
         if (!super.getLista().isEmpty()) {
-            return super.getLista().remove(super.getLista().size() - 1);
+            return lista.remove(lista.size() - 1);
         }
         return null;
     }

@@ -13,7 +13,7 @@ import java.util.List;
  */
 public abstract class PilaCola<E> {
     //insertamos atributos encapsulados
-    private List<E> lista;
+    protected List<E> lista;
     private final int tamañoMax;
 
     //insertamos constructor parametrizado

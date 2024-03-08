@@ -2,13 +2,16 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package PilaCola;
+package Main;
+
+import PilaCola.ColaFifo;
+import PilaCola.PilaLifo;
 
 /**
  *
  * @author daniel
  */
-public class Main {
+public class MainPilaCola {
     public static void main(String[] args) {
         //instanciamos la cola y la pila
         ColaFifo<String> cola = new ColaFifo<>(5);

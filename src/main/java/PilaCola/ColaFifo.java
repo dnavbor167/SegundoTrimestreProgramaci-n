@@ -22,7 +22,7 @@ public class ColaFifo<E> extends PilaCola<E>{
     @Override
     public E sacarElemento() {
         if (!estaVacio()) {
-            return super.getLista().remove(0);
+            return lista.remove(0);
         }
         return null;
     }
