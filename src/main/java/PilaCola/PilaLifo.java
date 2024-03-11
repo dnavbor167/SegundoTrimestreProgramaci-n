@@ -23,7 +23,7 @@ public class PilaLifo<E> extends PilaCola<E>{
     //insertamos método que sobreescribe el padre
     @Override
     public E sacarElemento() {
-        if (!super.getLista().isEmpty()) {
+        if (!super.lista.isEmpty()) {
             return lista.remove(lista.size() - 1);
         }
         return null;
